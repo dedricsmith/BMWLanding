@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Oswald', sans-serif;
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.container {
+	padding: 0 3rem;
+}
+
+/* Header */
+header {
+	width: 100vw;
+	min-height: 50%;
+	height: 110vh;
+
+	background-image: url('assets/landingBMW1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+
+.header-box {
+	background-color: rgba(0, 0, 0, 0.538);
+	padding: 0.8rem;
+	color: white;
+	width: 465px;
+	text-align: right;
+	position: absolute;
+	top: 60%;
+	right: 5%;
+}
+
+.header-box h1 {
+	font-size: 7rem;
+	font-weight: 400;
+	padding-bottom: 0.2rem;
+}
+
+.header-box span {
+	font-size: 1.1rem;
+	width: 100%;
+	font-weight: 600;
+}
+
+@media only screen and (max-width: 950px) {
+	.header-box {
+		top: 60%;
+		right: 5%;
+		width: 435px;
+	}
+
+	.header-box h1 {
+		font-size: 5rem;
+	}
+}
+
+@media only screen and (max-width: 717px) {
+	.header-box {
+		top: 63%;
+		right: 5%;
+		width: 345px;
+	}
+
+	.header-box h1 {
+		font-size: 3rem;
+	}
+
+	.header-box span {
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.header-box {
+		top: 65%;
+		right: 5%;
+		width: 285px;
+	}
+	.header-box h1 {
+		font-size: 2.5rem;
+	}
+
+	.header-box span {
+		font-size: 0.8rem;
+	}
+}
+
+/* Header end */
+
+/* Video Section */
+
+.video-section {
+	height: 60vh;
+	width: 100vw;
+	min-height: 90%;
+
+	background-image: url('/assets/bmw-landing2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.overlay {
+	background-color: rgba(0, 0, 0, 0.538);
+	height: 100%;
+}
+
+.video-box {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.video-box h4 {
+	font-weight: 400;
+	font-size: 3rem;
+	color: white;
+}
+
+.fa-style {
+	padding-right: 2rem;
+}
+
+@media only screen and (max-width: 950px) {
+	.video-box h4 {
+		font-size: 2rem;
+	}
+}
+
+@media only screen and (max-width: 717px) {
+	.video-box h4 {
+		font-size: 1.8rem;
+	}
+}
+
+/* Video */
+
+/* Performance Section */
+.performance-section {
+	height: 70vh;
+	width: 100vw;
+	background: #0069d2;
+	padding: 2rem 0;
+}
+
+.flex {
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.content-box {
+	color: white;
+	text-align: center;
+}
+
+.content-box span {
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+
+.content-box p {
+	font-size: 2rem;
+	margin: 2rem 0;
+}
+
+.text-small {
+	font-size: 1.4rem !important;
+	font-weight: 300;
+}
+
+@media only screen and (max-width: 950px) {
+	.content-box span {
+		font-size: 1.6rem;
+	}
+
+	.content-box p {
+		font-size: 1.4rem;
+	}
+}
+
+@media only screen and (max-width: 778px) {
+	.mobile-flex {
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 1.5rem;
+	}
+
+	.content-box p {
+		margin: 1rem 0;
+		font-size: 1.5rem;
+	}
+
+	.text-small {
+		margin: 1rem 0;
+		font-size: 1.3rem !important;
+	}
+}
+
+/* Performance Section */
+
+/* Design Section */
+.design-section {
+	height: 100vh;
+	width: 100vw;
+	padding: 2rem 0;
+
+	background-image: url('/assets/bmw-landing3.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.title-box {
+	background: rgba(0, 0, 0, 0.538);
+	color: white;
+	width: 90%;
+	padding: 1.8rem 4rem;
+	text-align: center;
+}
+
+.title-box h3 {
+	font-size: 5rem;
+	font-weight: 400;
+}
+
+@media only screen and (max-width: 950px) {
+	.title-box h3 {
+		font-size: 4rem;
+	}
+}
+
+@media only screen and (max-width: 778px) {
+	.title-box h3 {
+		font-size: 3.5rem;
+	}
+}
+
+@media only screen and (max-width: 610px) {
+	.title-box h3 {
+		font-size: 2.5rem;
+	}
+}
+
+@media only screen and (max-width: 388px) {
+	.title-box {
+		width: 100%;
+	}
+}
+
+/* Design Section */
+
+/* Extras Section */
+.extras-section {
+	height: 95vh;
+	width: 100vw;
+	padding: 2rem 0;
+}
+
+.content-container {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+}
+
+.extra-container {
+	flex-direction: column;
+	justify-content: center !important;
+	gap: 4rem;
+}
+
+.content-container img {
+	width: 400px;
+}
+
+.extra-section__info {
+	align-self: start;
+	height: 100%;
+}
+
+.extra-section__info h3 {
+	font-size: 1.4rem;
+	font-weight: 400;
+	padding-bottom: 0.5rem;
+}
+
+.extra-section__info div {
+	padding-bottom: 0.5rem;
+}
+
+.extra-section__info div em {
+	font-size: 1.2rem;
+	font-family: 'Crimson Text, san serif';
+}
+
+.extra-section__info ul {
+	line-height: 34px;
+	font-size: 1rem;
+}
+
+.scroller {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	cursor: pointer;
+}
+
+.fa-color {
+	color: #0069d2;
+}
+
+.left-arrow:hover {
+	color: #0069d2;
+}
+.right-arrow:hover {
+	color: #0069d2;
+}
+
+@media only screen and (max-width: 664px) {
+	.content-container {
+		flex-direction: column;
+	}
+
+	.extra-section__info {
+		align-self: center;
+	}
+}
+
+/* Extras Section */
+
+/* Footer Section*/
+.footer-section {
+	height: 50vh;
+	width: 100vw;
+	padding: 3rem 0;
+	background: black;
+}
+
+.footer-container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	color: white;
+	gap: 3rem;
+}
+
+.email-container {
+	width: 40%;
+}
+
+.email-container h5 {
+	font-size: 2rem;
+}
+
+.email-container form {
+	display: flex;
+	flex-direction: column;
+	padding-top: 1rem;
+}
+
+.email-container input {
+	padding: 0.5rem 0.3rem;
+	outline-color: #0069d2;
+	outline-width: 5px;
+	border: 3px solid #0069d2;
+	border-radius: 5px;
+	font-family: sans-serif;
+}
+
+.email-container button {
+	background: #0069d2;
+	margin-top: 1rem;
+	border: none;
+	border-radius: 5px;
+	font-size: 1rem;
+	font-family: 'Oswald', sans-serif;
+	color: white;
+	padding: 7px 9px;
+	width: 130px;
+	cursor: pointer;
+}
+
+.email-container button:hover {
+	background: #0069d2eb;
+}
+
+.text-container {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: start;
+}
+
+.text-container h5 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.text-container p {
+	font-size: 1rem;
+	line-height: 25px;
+}
+
+@media only screen and (max-width: 779px) {
+	.footer-section {
+		height: 70vh;
+	}
+	.footer-container {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.email-container {
+		width: 100%;
+	}
+
+	.text-container {
+		width: 100%;
+	}
+}
+
+/* Footer Section*/
